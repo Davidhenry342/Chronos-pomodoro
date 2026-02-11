@@ -1,0 +1,9 @@
+body {
+  background-color: var(--primary);
+  font-family: Gill sans;
+  font-size: 20px;
+}
+
+h1 {
+  color: var(--paragraf);
+}
