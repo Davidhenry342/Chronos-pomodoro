@@ -11,6 +11,15 @@ export function App() {
       <Container>
         <Heading>Oi tudo bem?</Heading>
       </Container>
+
+      <Container>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed illum
+          placeat maiores nemo recusandae sint et, voluptate similique, possimus
+          perspiciatis, quasi tempore quae doloremque quia nihil eos?
+          Voluptatum, quibusdam quam.
+        </p>
+      </Container>
     </>
   );
 }
