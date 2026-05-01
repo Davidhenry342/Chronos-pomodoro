@@ -4,10 +4,14 @@ import './styles/global.css';
 //import { TimerIcon } from 'lucide-react';
 import { Container } from './components/Container/index';
 import { Heading } from './components/Heading';
+import { Logo } from './components/Logo';
 
 export function App() {
   return (
     <>
+      <Container>
+        <Logo>Logo</Logo>
+      </Container>
       <Container>
         <Heading>Oi tudo bem?</Heading>
       </Container>
