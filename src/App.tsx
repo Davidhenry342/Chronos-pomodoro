@@ -3,17 +3,21 @@ import './styles/global.css';
 
 //import { TimerIcon } from 'lucide-react';
 import { Container } from './components/Container/index';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
 
 export function App() {
   return (
     <>
       <Container>
-        <Logo>Logo</Logo>
+        <Logo />
       </Container>
       <Container>
-        <Heading>Oi tudo bem?</Heading>
+        <Menu />
+      </Container>
+      <Container>
+        <CountDown />
       </Container>
 
       <Container>
