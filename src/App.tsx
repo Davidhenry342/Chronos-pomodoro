@@ -6,6 +6,10 @@ import { Container } from './components/Container/index';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
+import { DefaultButton } from './components/DefaultButton';
+import { Form } from './components/Form';
+import { FormRow } from './components/Form/FormRow';
+import { Input } from './components/Input';
 
 export function App() {
   return (
@@ -21,12 +25,21 @@ export function App() {
       </Container>
 
       <Container>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed illum
-          placeat maiores nemo recusandae sint et, voluptate similique, possimus
-          perspiciatis, quasi tempore quae doloremque quia nihil eos?
-          Voluptatum, quibusdam quam.
-        </p>
+        <Form>
+          <FormRow>
+            <Input type="text" />
+          </FormRow>
+          <FormRow>
+            <p>sic parvis magna</p>
+          </FormRow>
+          <FormRow>
+            <p>Ciclos</p>
+            <p>0 0 0 0 0</p>{' '}
+          </FormRow>
+          <FormRow>
+            <DefaultButton />
+          </FormRow>
+        </Form>
       </Container>
     </>
   );
