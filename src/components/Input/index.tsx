@@ -1,11 +1,13 @@
 type DefaultInputProps = {
-  type: string;
-};
-export function Input({ type }: DefaultInputProps) {
+  id: string;
+  children: React.ReactNode;
+} & React.ComponentProps<'input'>;
+
+export function Input({ id, type, children }: DefaultInputProps) {
   return (
     <>
-      <label htmlFor="defaultInput"></label>
-      <input id="defaultInput" type={type} />
+      <label htmlFor={id}>{children}</label>
+      <input id={id} type={type} />
     </>
   );
 }

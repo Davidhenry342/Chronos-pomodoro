@@ -27,7 +27,9 @@ export function App() {
       <Container>
         <Form>
           <FormRow>
-            <Input type="text" />
+            <Input id="meuInput" type="text">
+              Testando
+            </Input>
           </FormRow>
           <FormRow>
             <p>sic parvis magna</p>
