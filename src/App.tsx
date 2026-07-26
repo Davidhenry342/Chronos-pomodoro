@@ -1,15 +1,16 @@
 import './styles/theme.css';
 import './styles/global.css';
 
-//import { TimerIcon } from 'lucide-react';
+import { CirclePlayIcon, StopCircleIcon } from 'lucide-react';
 import { Container } from './components/Container/index';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
-import { DefaultButton } from './components/DefaultButton';
+import { DefaultButton } from './components/Button';
 import { Form } from './components/Form';
 import { FormRow } from './components/Form/FormRow';
 import { Input } from './components/Input';
+import { Cycles } from './components/Cycles';
 
 export function App() {
   return (
@@ -27,19 +28,24 @@ export function App() {
       <Container>
         <Form>
           <FormRow>
-            <Input id="meuInput" type="text">
-              Testando
-            </Input>
+            <Input
+              id="meuInput"
+              type="text"
+              labelText="Qualquer coisa"
+              placeholder="Digite aqui"
+            />
           </FormRow>
           <FormRow>
             <p>sic parvis magna</p>
           </FormRow>
           <FormRow>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0</p>{' '}
+            <div>
+              <Cycles />
+            </div>
           </FormRow>
           <FormRow>
-            <DefaultButton />
+            <DefaultButton icon={<CirclePlayIcon />} />
+            <DefaultButton icon={<StopCircleIcon />} color="red" />
           </FormRow>
         </Form>
       </Container>
