@@ -1,7 +1,7 @@
 import './styles/theme.css';
 import './styles/global.css';
 
-import { CirclePlayIcon, StopCircleIcon } from 'lucide-react';
+import { CirclePlayIcon } from 'lucide-react';
 import { Container } from './components/Container/index';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
@@ -11,6 +11,7 @@ import { Form } from './components/Form';
 import { FormRow } from './components/Form/FormRow';
 import { Input } from './components/Input';
 import { Cycles } from './components/Cycles';
+import { Footer } from './components/Footer';
 
 export function App() {
   return (
@@ -45,9 +46,12 @@ export function App() {
           </FormRow>
           <FormRow>
             <DefaultButton icon={<CirclePlayIcon />} />
-            <DefaultButton icon={<StopCircleIcon />} color="red" />
           </FormRow>
         </Form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
