@@ -32,7 +32,7 @@ export function App() {
             <Input
               id="meuInput"
               type="text"
-              labelText="Qualquer coisa"
+              labelText="Task"
               placeholder="Digite aqui"
             />
           </FormRow>
